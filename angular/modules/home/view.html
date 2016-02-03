@@ -1,7 +1,7 @@
 <h2>People</h2>
 
 <div class="userlist">
-<input type="text" class="form-control" ng-model="search" placeholder="Search" /><br>
+<input type="text" class="form-control" placeholder="Search" /><br>
 <button ui-sref="user" class="btn btn-primary btn-sm">Add People</button><br>
   <table class="table">
     <thead>
@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ui-sref="user({ id: person.id })" ng-repeat="person in vm.people | filter: search | orderBy:'name'">
+      <tr ui-sref="user({ id: person.id })" ng-repeat="person in vm.people | filter: search">
         <td>{{ person.name }}</td>
         <td>{{ person.email }}</td>
         <td>{{ person.gender }}</td>

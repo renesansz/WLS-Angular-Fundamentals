@@ -20,12 +20,6 @@
                 url: 'user/:id',
                 controller: 'UserController as user',
                 templateUrl: NG_PATH.MODULES + 'user/view.html'
-            })
-            // About Page
-            .state({
-                name: 'about',
-                url: '/about',
-                templateUrl: NG_PATH.MODULES + 'about/view.html'
             });
 
 
